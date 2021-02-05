@@ -1,0 +1,10 @@
+.header__container {
+    background-color: $header-color;
+    border-bottom: 1px solid $border;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,43 @@
+.preview__list {
+    margin-left: 16px;
+}
+
+.preview__list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.preview__link {
+    text-decoration: none;
+    color: $list-color;
+    font-family: 'TTLakes-Medium';
+    padding: 8px 16px;
+    display: block;
+}
+
+.preview__item:first-child .preview__link {
+    border: 2px solid $border-list;
+    border-radius: 6px;
+    background-color: $header-color;
+}
+
+.preview__text {
+    height: 90px;
+    overflow: hidden;
+}
+
+.preview__paragraph {
+    font-size: 14px;
+    font-family: 'TTLakes-Regular';
+}
+
+.preview__logo {
+    min-width: 320px;
+}
+
+.preview__photo {
+    width: 100%;
+}

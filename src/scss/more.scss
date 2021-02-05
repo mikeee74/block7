@@ -1,0 +1,23 @@
+.more {
+    display: flex;
+    text-decoration: none;
+    &__text {
+        margin-left: 16px;
+        color: black;
+        font-family: 'TTLakes-Medium';
+    }
+    &__container {
+        margin: 16px 0;
+    }
+}
+
+.more__container {
+    display: inline-block;
+}
+
+
+
+.more__img--rotate {
+    display: inline-block;
+    transform: rotate(180deg);
+}

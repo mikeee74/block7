@@ -1,0 +1,51 @@
+.price__more {
+    display: none;
+    margin-left: 24px;
+}
+
+.price__container {
+    padding: 24px;
+}
+
+.price-slide {
+    width: 192px;
+    height: 128px;
+    background-color: $header-color;
+    border: 1px solid $swiper-border;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.price-link {
+    align-self: flex-end;
+}
+
+.price__span {
+    font-family: 'TTLakes-Regular';
+    align-self: flex-start;
+    font-size: 14px;
+    margin-right: 28px;
+}
+
+.price-slide__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price__paragraph {
+    font-family: 'TTLakes-Regular';
+    font-size: 14px;
+}
+
+.price__link-advice {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: 'TTLakes-Medium';
+}

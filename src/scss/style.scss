@@ -1,0 +1,288 @@
+@import './normalize.css';
+@import './colors.scss';
+@import './fonts.scss';
+@import './swiper.scss';
+@import './swiper-bundle.css';
+@import './more.scss';
+@import './swiperRepair.scss';
+@import './preview.scss';
+@import './header.scss';
+@import './swiperTech.scss';
+@import './swiperPrice.scss';
+@import './footer.scss';
+@import './burger.scss';
+@import './all_wrap.scss';
+@import './popup.scss';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  background-color: $page-color;
+}
+
+.container {
+  margin: 0 16px;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.item-container {
+  padding-left: 16px;
+}
+
+.nav--hidden {
+  display: none;
+}
+
+.border--hidden {
+  display: none;
+}
+
+.head {
+  font-size: 28px;
+  font-family: 'TTLakes-Bold';
+  position: relative;
+  margin: 24px 0;
+}
+
+.head::before {
+  content: url(../img/highlight.svg);
+  position: absolute;
+  left: -17px;
+  top: -5px;
+}
+
+.tools--hidden {
+  display: none;
+}
+
+.chat-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-button__container--call {
+  top: 300px;
+}
+
+///////////////////////////////////////////////////////////////
+@media (min-width: 768px) {
+  .nav--hidden {
+    display: flex;
+  }
+  
+  .border--hidden {
+    display: flex;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .nav:nth-of-type(1) {
+    margin-right: 20px;
+  }
+
+  .border:nth-of-type(1) {
+    margin-right: 20px;
+  }
+
+  .border:nth-of-type(3) {
+    margin-left: 20px;
+  }
+
+  .nav__second {
+    margin-left: 16px;
+  }
+
+  .container {
+    margin: 0 24px;
+  }
+
+  .head::before {
+    content: url(../img/highlight.svg);
+    position: absolute;
+    left: -25px;
+    top: -5px;
+  }
+
+  .welcome__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .preview {
+    &__logo {
+      min-width: 165px;
+      margin-right: 16px;
+    }
+    &__photo {
+      border-radius: 6px;
+    }
+    &__text {
+      height: 155px;
+      width: 360px;
+      overflow: hidden;
+    }
+  }
+
+  .repair__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tech__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .price__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $header-color;
+    box-sizing: border-box;
+  }
+
+  .price__container {
+    max-width: 1056px;
+  }
+
+  .price-slide {
+    flex-direction: row;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid $swiper-border;
+    width: 100%;
+    height: 64px;
+  }
+
+  .price-span-container {
+    display: flex;
+    width: 100%;
+    max-width: 550px;
+    justify-content: space-between;
+  }
+
+  .popup__content {
+    width: 440px;
+  }
+
+  .popup__input {
+    width: 366px;
+  }
+
+}
+//////////////////////////////////////////////////////////
+@media (min-width: 1120px) {
+  .head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .container {
+    margin: 0 34px;
+  }
+
+  .head::before {
+    content: url(../img/highlight.svg);
+    position: absolute;
+    left: -34px;
+    top: -5px;
+  }
+
+  .preview__list {
+    overflow: visible;
+    flex-wrap: wrap;
+    margin: 0 34px;
+  }
+
+  .preview__text {
+    overflow: visible;
+  }
+
+  .preview__text {
+    min-width: 550px;
+  }
+
+  .welcome__container {
+    justify-content: center;
+  }
+
+  .preview__logo {
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 1440px) {
+  .content {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .all-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+  }
+
+  .tools--hidden {
+    display: flex;
+  }
+
+  .tools {
+    display: flex;
+  }
+
+  .tools__item {
+    display: flex;
+    margin-left: 32px;
+    align-items: center;
+  }
+
+  .tools__text {
+    margin-right: 9px;
+    font-family: 'TTLakes-Medium';
+  }
+
+  .header {
+    display: none;
+  }
+
+  .nav-bar__container {
+    box-shadow: none;
+    border: none;
+  }
+
+  .nav-bar {
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+    transform: translate(0px);
+  }
+
+  .nav-bar__button.button--close {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+.swiper__header {
+    height: 80px;
+    padding: 16px;
+    background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+}
+
+.swiper__head {
+    font-family: 'TTLakes-regular';
+    font-weight: 400;
+    font-style: normal;
+    color: #7E7E82;
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.swiper__block {
+    background-color: #F8F8F8;
+    min-width: 320px;
+    border-top: 2px solid #D9FFF5;
+}
