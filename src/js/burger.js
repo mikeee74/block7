@@ -9,14 +9,14 @@ export function burger () {
         evt.preventDefault();
 
         elem.classList.add('nav-bar--active');
-
+        document.querySelector('body').classList.add('body--hidden');
     });
 
     close.addEventListener('click', function (evt) {
         evt.preventDefault();
 
         elem.classList.remove('nav-bar--active');
-
+        document.querySelector('body').classList.remove('body--hidden');
     });
 
 }

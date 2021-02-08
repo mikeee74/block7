@@ -3,6 +3,7 @@
     height: 100%;
     border: 1px solid white;
     box-shadow: 21px 3px 49px -9px rgba(0,0,0,0.71);
+    overflow-y: scroll;
 }
 
 .nav-bar__header {
@@ -49,7 +50,7 @@
     margin: 0;
     padding: 0;
     padding-left: 24px;
-    margin-bottom: 268px;
+    margin-bottom: 30px;
 }
 
 .nav-bar__main li {
@@ -130,9 +131,10 @@
 .nav-bar {
     opacity: 0;
     visibility: hidden;
-    z-index: 10;
-    position: absolute;
+    z-index: 11;
+    position: fixed;
     background-color: white;
+    width: 320px;
     height: 100%;
     transform: translate(-350px);
     transition: 1s; 
@@ -144,4 +146,8 @@
     opacity: 1;
     visibility: visible;
     transform: translate(0px);
+}
+
+address {
+    font-style: normal;
 }

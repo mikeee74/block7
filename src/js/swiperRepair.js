@@ -1,7 +1,7 @@
 export function swiperRepair () {
     let slidesRepair = document.querySelectorAll('.repair-slide');
 
-    if ( window.innerWidth >= 768 && window.innerWidth < 945) {
+    if ( window.innerWidth >= 768 && window.innerWidth < 1120) {
 
     for ( let i = 6; i < slidesRepair.length; i++ ) {
         slidesRepair[i].style.display = 'none';
@@ -30,7 +30,7 @@ export function swiperRepair () {
     });
     }
 
-    if ( window.innerWidth >= 945) {
+    if ( window.innerWidth >= 1120) {
 
         for ( let i = 8; i < slidesRepair.length; i++ ) {
             slidesRepair[i].style.display = 'none';

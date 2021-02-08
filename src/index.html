@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Услуги и сервисы</title>
 </head>
 <body>
 
@@ -11,48 +11,15 @@
         
         <div class="popup popup-call">
             <div class="popup__body">
+                <div class="popup__blur"></div>
                 <div class="popup__content">
-                    <a href="#" class="popup__close">
-                        <img src="./img/close.svg" alt="">
-                    </a>
+                    <button class="button button-close popup__close"></button>
                     <div class="popup__title">Заказать звонок</div>
                     <div class="popup__text">
                         <div class="popup__item">
-                            <input class="popup__input" type="tel" placeholder="Телефон">
-                        </div>
-                        <p class="popup__paragraph">
-                            Нажимая “отправить”, вы даете согласие
-                             на обработку персональных данных и 
-                             соглашаетесь с нашей политикой 
-                             конфиденциальности
-                        </p>
-                        <div class="popup-button__container">
-                            <button class="popup-button__item popup-button__container--call" type="submit">Отправить</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="popup popup-chat">
-            <div class="popup__body">
-                <div class="popup__content">
-                    <a href="#" class="popup__close">
-                        <img src="./img/close.svg" alt="">
-                    </a>
-                    <div class="popup__title">Обратная связь</div>
-                    <div class="popup__text">
-                        <div class="popup__item">
-                            <input class="popup__input" type="text" placeholder="Имя">
-                        </div>
-                        <div class="popup__item">
-                            <input class="popup__input" type="tel" placeholder="Телефон">
-                        </div>
-                        <div class="popup__item">
-                            <input class="popup__input" type="email" placeholder="Электронная почта">
-                        </div>
-                        <div class="popup__item">
-                            <textarea class="popup__input" placeholder="Сообщение" name="" id="" cols="30" rows="10"></textarea>
+                            <form>
+                                <input class="popup__input" type="tel" placeholder="Телефон">
+                            </form>
                         </div>
                         <p class="popup__paragraph">
                             Нажимая “отправить”, вы даете согласие
@@ -68,14 +35,53 @@
             </div>
         </div>
 
-        <article class="nav-bar">
+        <div class="popup popup-chat">
+            <div class="popup__body">
+                <div class="popup__blur"></div>
+                <div class="popup__content">
+                    <button class="button button-close popup__close"></button>
+                    <div class="popup__title">Обратная связь</div>
+                    <div class="popup__text">
+                        <div class="popup__item">
+                            <form>
+                                <input class="popup__input" type="text" placeholder="Имя">
+                            </form>
+                        </div>
+                        <div class="popup__item">
+                            <form>
+                                <input class="popup__input" type="tel" placeholder="Телефон">
+                            </form>
+                        </div>
+                        <div class="popup__item">
+                            <form>
+                                <input class="popup__input" type="email" placeholder="Электронная почта">
+                            </form>
+                        </div>
+                        <div class="popup__item">
+                            <form>
+                                <textarea class="popup__input" placeholder="Сообщение" name="" id="" cols="30" rows="10"></textarea>
+                            </form>
+                        </div>
+                        <p class="popup__paragraph">
+                            Нажимая “отправить”, вы даете согласие
+                             на обработку персональных данных и 
+                             соглашаетесь с нашей политикой 
+                             конфиденциальности
+                        </p>
+                        <div class="popup-button__container">
+                            <button class="popup-button__item" type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="nav-bar">
             <div class="nav-bar__container">
                 <header class="nav-bar__header">
                     <ul class="nav-bar__header-nav nav-bar__list">
                         <li class="nav-bar__header-item">
-                            <a class="nav-bar__header-link nav-bar__button button--close" href="#">
-                                <img src="./img/close.svg" alt="burger">
-                            </a>
+                            <button class="button button-close nav-bar__header-link nav-bar__button button--close"></button>
                         </li>
                         <li class="nav-bar__header-item">
                             <a class="nav-bar__header-link" href="#">
@@ -83,9 +89,7 @@
                             </a>
                         </li>
                         <li class="nav-bar__header-item">
-                            <a class="nav-bar__header-link nav-bar__button" href="#">
-                                <img src="./img/search.svg" alt="search">
-                            </a>
+                            <button class="button button-search-2 nav-bar__header-link nav-bar__button"></button>
                         </li>
                     </ul>
                 </header>
@@ -120,23 +124,20 @@
                 <footer class="nav-bar__footer">
                     <ul class="nav-bar__footer-social nav-bar__list">
                         <li class="nav-bar__footer-social-item">
-                            <a class="nav-bar__footer-social-link nav-bar__button button-call" href="#">
-                                <img src="./img/call.svg" alt="phone">
-                            </a>
+                            <button class="button nav-bar__footer-social-link nav-bar__button button-call"></button>
                         </li>
                         <li class="nav-bar__footer-social-item">
-                            <a class="nav-bar__footer-social-link nav-bar__button button-chat" href="#">
-                                <img src="img/chat.svg" alt="chat">
-                            </a>
+                            <button class="button nav-bar__footer-social-link nav-bar__button button-chat"></button>
                         </li>
                         <li class="nav-bar__footer-social-item">
-                            <a class="nav-bar__footer-social-link nav-bar__button" href="#">
-                                <img src="img/profile.svg" alt="profile">
-                            </a>
+                            <button class="button nav-bar__footer-social-link nav-bar__button button-user"></button>
                         </li>
                     </ul>
-                    <div class="nav-bar__footer-mail">mail@ops.com</div>
-                    <div class="nav-bar__footer-contact-number">8 800 890 8900</div>
+                    <address>
+                        <div class="nav-bar__footer-mail">mail@ops.com</div>
+                        <div class="nav-bar__footer-contact-number">8 800 890 8900</div>
+                    </address>
+                    
                     <ul class="nav-bar__footer-language nav-bar__list">
                         <li class="nav-bar__footer-language-item">
                             <a class="nav-bar__footer-language-link" href="#">RU</a>
@@ -150,18 +151,17 @@
                     </ul>
                 </footer>
             </div>
-        </article>
+        </section>
 
         <div class="content">
             <header class="header header__container">
                 <div class="container">
+                    
                     <nav class="header__nav">
-        
+                        
                         <ul class="nav">
                             <li class="nav__item">
-                                <a class="nav__link" href="#">
-                                    <img src="./img/burger.svg" alt="">
-                                </a>
+                                <button class="button button-burger nav__link"></button>
                             </li>
                         </ul>
             
@@ -177,19 +177,13 @@
             
                         <ul class="nav nav--hidden">
                             <li class="nav__item">
-                                <a class="nav__link button-call" href="#">
-                                    <img src="./img/call.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="nav__item nav__second button-chat">
-                                <a class="nav__link" href="#">
-                                    <img src="./img/chat.svg" alt="">
-                                </a>
+                                <button class="button button-call nav__link"></button>
                             </li>
                             <li class="nav__item nav__second">
-                                <a class="nav__link" href="#">
-                                  <img src="./img/profile.svg" alt="">  
-                                </a>
+                                <button class="button button-chat nav__link"></button>
+                            </li>
+                            <li class="nav__item nav__second">
+                                <button class="button button-user nav__link"></button>
                             </li>
                         </ul>
             
@@ -199,14 +193,10 @@
             
                         <ul class="nav">
                             <li class="nav__item item-container">
-                                <a class="nav__link" href="#">
-                                    <img src="./img/repair.svg" alt="">
-                                </a>
+                                <button class="button button-repair nav__link"></button>
                             </li>
                             <li class="nav__item item-container">
-                                <a class="nav__link" href="#">
-                                    <img src="./img/checkstatus.svg" alt="">
-                                </a>
+                                <button class="button button-search nav__link"></button>
                             </li>
                         </ul>
             
@@ -223,11 +213,11 @@
                         <div class="tools tools--hidden">
                             <div class="tools__item">
                                 <p class="tools__text">Оставить заявку</p>
-                                <a class="tools__link" href="#"><img src="./img/checkstatus.svg" alt=""></a>
+                                <button class="button tools__link button-repair"></button>
                             </div>
                             <div class="tools__item">
                                 <p class="tools__text">Статус ремонта</p>
-                                <a class="tools__link" href="#"><img src="./img/checkstatus.svg" alt=""></a>
+                                <button class="button tools__link button-search"></button>
                             </div>
 
                         </div>  
@@ -295,7 +285,7 @@
                         </header>
         
                         <div class="swiper-container repair__container">
-                            <div class="swiper-wrapper repair__wrapper">
+                            <div class="swiper-wrapper repair__wrapper">  
                                 <div class="swiper-slide repair-slide">
                                     <div class="repair-slide__img">
                                         <img src="./img/lenovo.png" alt="">
@@ -430,6 +420,47 @@
                                         <img src="./img/go.svg" alt="">
                                     </a>
                                 </div>
+                                <div class="swiper-slide tech-slide">
+                                    <span class="tech__span">
+                                        Ремонт  мониторов 
+                                    </span>
+                                    <a class="repair-slide__link tech-link" href="#" >
+                                        <img src="./img/go.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide tech-slide">
+                                    <span class="tech__span">
+                                        Ремонт  мониторов 
+                                    </span>
+                                    <a class="repair-slide__link tech-link" href="#" >
+                                        <img src="./img/go.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide tech-slide">
+                                    <span class="tech__span">
+                                        Ремонт  мониторов 
+                                    </span>
+                                    <a class="repair-slide__link tech-link" href="#" >
+                                        <img src="./img/go.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide tech-slide">
+                                    <span class="tech__span">
+                                        Ремонт  мониторов 
+                                    </span>
+                                    <a class="repair-slide__link tech-link" href="#" >
+                                        <img src="./img/go.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide tech-slide">
+                                    <span class="tech__span">
+                                        Ремонт  мониторов 
+                                    </span>
+                                    <a class="repair-slide__link tech-link" href="#" >
+                                        <img src="./img/go.svg" alt="">
+                                    </a>
+                                </div>
+                                
                             </div>
                             <!-- Add Pagination -->
                             <div class="swiper-pagination repair__pagination"></div>

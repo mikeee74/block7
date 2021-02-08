@@ -13,6 +13,7 @@
 @import './burger.scss';
 @import './all_wrap.scss';
 @import './popup.scss';
+@import './button.scss';
 
 html {
   box-sizing: border-box;
@@ -24,6 +25,10 @@ html {
 body {
   min-width: 320px;
   background-color: $page-color;
+}
+
+.body--hidden {
+  overflow: hidden;
 }
 
 .container {
@@ -71,8 +76,21 @@ body {
   visibility: visible;
 }
 
-.popup-button__container--call {
-  top: 300px;
+.chat-active .popup__content {
+  transform: translate(0px);
+}
+
+
+.repair-slide {
+  width: 208px;
+}
+
+.tech-slide {
+  width: 208px;
+}
+
+.preview__list {
+  overflow: scroll;
 }
 
 ///////////////////////////////////////////////////////////////
@@ -80,6 +98,10 @@ body {
   .nav--hidden {
     display: flex;
   }
+  
+  .nav-bar__main ul {
+    margin-bottom: 268px;
+}
   
   .border--hidden {
     display: flex;
@@ -136,16 +158,30 @@ body {
     }
   }
 
-  .repair__wrapper {
+  .repair__wrapper, .tech__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 768px;
+    margin: 0 auto;
   }
 
-  .tech__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .repair-slide {
+    width: 192px;
+    margin-left: 24px;
+  }
+
+  .tech-slide {
+    width: 192px;
+    margin-left: 24px;
+  }
+
+  .swiper-slide {
+    margin-bottom: 16px;
+  }
+
+  .repair__container, .tech__container {
+    padding: 24px 0;
   }
 
   .price__wrapper {
@@ -177,13 +213,56 @@ body {
     justify-content: space-between;
   }
 
-  .popup__content {
-    width: 440px;
-  }
-
   .popup__input {
     width: 366px;
   }
+
+  .price__wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .price__span {
+    min-width: 80px;
+  }
+
+  .price-slide__button .price__span {
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
+
+  .price-slide__button {
+    display: grid;
+    grid-template-columns: minmax(80px, 200px) 120px;
+  }
+
+  .footer__container {
+    margin: 47px 24px 25px 24px;
+    border-bottom: 1px solid white;
+}
+
+.footer__container-block {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer__block {
+    margin: 0;
+    width: 213px;
+}
+
+.footer__block:first-child {
+  text-align: left;
+  width: 218px;
+}
+
+.footer__block:last-child {
+  text-align: right;
+  width: 213px;
+}
 
 }
 //////////////////////////////////////////////////////////
@@ -231,6 +310,28 @@ body {
   .preview__logo {
     width: 100%;
   }
+
+  .repair__wrapper, .tech__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1120px;
+    margin: 0 auto;
+  }
+
+  .repair__container, .tech__container {
+    padding: 24px 0;
+  }
+
+  .repair-slide {
+    width: 208px;
+    margin-left: 32px;
+  }
+
+  .tech-slide {
+    width: 208px;
+    margin-left: 32px;
+  }
   
 }
 
@@ -239,6 +340,10 @@ body {
     margin: 0;
     margin-left: auto;
   }
+
+  .nav-bar__container {
+    overflow-y: visible;
+}
 
   .all-wrap {
     max-width: 1440px;
@@ -280,9 +385,11 @@ body {
     visibility: visible;
     transition: 1s;
     transform: translate(0px);
+    position: absolute;
   }
 
   .nav-bar__button.button--close {
     display: none;
   }
+
 }
